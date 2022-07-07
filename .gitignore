@@ -1,0 +1,101 @@
+*.rbc
+ capybara-*.html
+ .rspec
+ /spec/examples.txt
+ /log
+ /node_modules
+ /tmp
+ /db/dump
+ /db/*.sqlite3
+ /db/*.sqlite3-journal
+ /public/system
+ coverage/
+ /spec/tmp
+ **.orig
+ rerun.txt
+ pickle-email-*.html
+ config/database.yml
+ emails.log
+ # Don't include hidden files by default
+ .*
+ !.keep
+ # But include .ebextensions
+ !.ebextensions
+ !.dockerignore
+ !/public/.well-known/
+ 
+ # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+ # config/initializers/secret_token.rb
+ # config/secrets.yml
+ 
+ ## Environment normalisation:
+ /.bundle
+ /vendor/bundle
+ 
+ # these should all be checked in to normalise the environment:
+ # Gemfile.lock, .ruby-version, .ruby-gemset
+ 
+ # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+ .rvmrc
+ 
+ # if using bower-rails ignore default bower_components path bower.json files
+ /vendor/assets/bower_components
+ *.bowerrc
+ bower.json
+ nbproject/project.xml
+ 
+ nbproject/project.properties
+ 
+ nbproject/private/rake-d.txt
+ 
+ nbproject/private/private.xml
+ 
+ nbproject/private/private.properties
+ 
+ # Elastic Beanstalk Files
+ .elasticbeanstalk/*
+ !.elasticbeanstalk/*.cfg.yml
+ !.elasticbeanstalk/*.global.yml
+ 
+ *.rdb
+ /nbproject/private/
+ /emails.log
+ 
+ vendor/live/node_modules/*
+ 
+ node_modules/
+ /public/packs
+ /public/assets
+ /public/robots.txt
+ 
+ # We only use yarn so git ignoring package-lock.json
+ package-lock.json
+ 
+ !.eslintrc.js
+ # Vscode config
+ jsconfig.json
+ 
+ .elasticbeanstalk/config.yml
+ 
+ # Local Configuration Files
+ /bin/local_env.sh
+ ssh_key_file_path.txt
+ 
+ # Rubocopy Configuration Files
+ !.rubocop.yml
+ !.rubocop_todo.yml
+ 
+ # Overcommit Configuration Files
+ !.overcommit.yml
+ 
+ # Commiting Git Hooks
+ !.githooks
+ 
+ # Ignore development config of webpack which will be maintained by individual dev based on his preference
+ frontend/config/apps.development.json
+ frontend/config/apps.production.json
+ 
+ /public/packs-test
+ /yarn-error.log
+ yarn-debug.log*
+ .yarn-integrity
